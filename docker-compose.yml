@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tl-gestta
+    ports:
+      - 3030:3030
+    restart: unless-stopped
+    
